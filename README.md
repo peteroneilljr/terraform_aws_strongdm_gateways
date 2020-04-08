@@ -109,5 +109,5 @@ module "sdm" {
 | Name | Description |
 |------|-------------|
 | sdm_gateway_ids | Map of gateway names and instance IDs | 
-| sdm_gateway_public_ips | Map of gateway names and instance IDs |
+| sdm_gateway_public_ips | Map of gateway names and instance IP addresses |
 | sdm_relay_ids | Map of relay names and instance IDs |
