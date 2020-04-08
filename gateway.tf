@@ -6,7 +6,7 @@ resource "sdm_node" "gateway" {
 
   gateway {
     name           = "${var.sdm_node_name}-gateway-${count.index}"
-    listen_address = "${var.dns_hostnames ? aws_eip.gateway[count.index].public_ip : aws_eip.gateway[count.index].public_dns}:${var.gateway_listen_port}"
+    listen_address = "${var.dns_hostnames ? aws_eip.gateway[count.index].public_dns : aws_eip.gateway[count.index].public_ip}:${var.gateway_listen_port}"
     bind_address   = "0.0.0.0:${var.gateway_listen_port}"
   }
 }
