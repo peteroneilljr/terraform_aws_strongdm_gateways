@@ -100,6 +100,6 @@ module "sdm" {
 | detailed_monitoiring | Enables detailed monitoring on all instances. | `bool` | `false` | no |
 | enable_cpu_alarm | When enabled a CloudWatch alarm is created for each instance. Threshold is greater than 75% utilization for 2 rounds of 5 minutes. | `bool` | `false` | no |
 | dns_hostnames | The strongDM gateways will look for the public dns name to use for the strongDM gateway hostname, set to false to switch to IP address. | `bool` | `true` | no |
-| dev_mode | When enabled t3.micros are used instead of t3.mediums, this is not recommended for production environements. | `bool` | `false` | no |
+| dev_mode | When enabled t3.micros are used instead of t3.mediums, this is not recommended for production environments. | `bool` | `false` | no |
 | enable_module | A conditional create option, when set to false no resources will be created. | `bool` | `true` | no |
 | tags | Any tags provided will be passed along to any resources that are created. | `map(string)` | `{}` | no |
