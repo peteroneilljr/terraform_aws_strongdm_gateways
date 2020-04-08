@@ -1,4 +1,4 @@
-# strongDM Gateawys and Relays terraform module
+# strongDM Gateways and Relays terraform module
 
 This module uses the following resources:
 
