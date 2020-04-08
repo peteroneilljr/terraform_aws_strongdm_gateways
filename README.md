@@ -103,3 +103,11 @@ module "sdm" {
 | dev_mode | When enabled t3.micros are used instead of t3.mediums, this is not recommended for production environments. | `bool` | `false` | no |
 | enable_module | A conditional create option, when set to false no resources will be created. | `bool` | `true` | no |
 | tags | Any tags provided will be passed along to any resources that are created. | `map(string)` | `{}` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| sdm_gateway_ids | Map of gateway names and instance IDs | 
+| sdm_gateway_public_ips | Map of gateway names and instance IDs |
+| sdm_relay_ids | Map of relay names and instance IDs |

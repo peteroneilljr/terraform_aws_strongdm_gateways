@@ -16,9 +16,3 @@ output "sdm_relay_ids" {
     instance.tags.Name => instance.id
   }
 }
-output "sdm_relay_ips" {
-  value = {
-    for instance in aws_instance.relay :
-    instance.tags.Name => instance.public_ip
-  }
-}
