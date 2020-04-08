@@ -25,7 +25,7 @@ This module uses the following resources:
 H.A. gateways in the same subnet
 ~~~
 module "sdm" {
-  source = "github.com/peteroneilljr/terraform-aws-api-gateway-resource"
+  source = "github.com/peteroneilljr/terraform_aws_strongdm_gateways"
 
   sdm_node_name = "dev-env-public"
 
@@ -40,7 +40,7 @@ module "sdm" {
 Add relay to private subnet with tags
 ~~~
 module "sdm" {
-  source = "github.com/peteroneilljr/terraform-aws-api-gateway-resource"
+  source = "github.com/peteroneilljr/terraform_aws_strongdm_gateways"
 
   sdm_node_name = "dev-env-private"
   
@@ -59,7 +59,7 @@ module "sdm" {
 Full Options Deployment 
 ~~~
 module "sdm" {
-  source = "github.com/peteroneilljr/terraform-aws-api-gateway-resource"
+  source = "github.com/peteroneilljr/terraform_aws_strongdm_gateways"
 
   sdm_node_name = "dev-env"
   deploy_vpc_id = module.vpc.vpc_id
